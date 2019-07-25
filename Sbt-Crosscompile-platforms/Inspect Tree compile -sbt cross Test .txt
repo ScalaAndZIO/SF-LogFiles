@@ -1,0 +1,204 @@
+Repo: https://github.com/ScalaAndZIO/Sbt-Crosscompile-platforms.git
+Commit:1b5bcdb1e1ed944250767f4300c5e92eacc7ac5e
+
+[IJ]> inspect tree test 
+[info] crosscompileplatforms3june/test:test = Task[Unit]
+[info]   +-crosscompileplatforms3june/test:executeTests = Task[sbt.Tests$Outp..
+[info]   | +-crosscompileplatforms3june/test:loadedTestFrameworks = Task[scal..
+[info]   | | +-crosscompileplatforms3june/test:loadedTestFrameworks::streams ..
+[info]   | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedKey..
+[info]   | | | 
+[info]   | | +-*/*:testFrameworks = List(TestFramework(WrappedArray(org.scala..
+[info]   | | +-crosscompileplatforms3june/test:testLoader = Task[java.lang.Cl..
+[info]   | |   +-crosscompileplatforms3june/test:fullClasspath = Task[scala.c..
+[info]   | |   | +-crosscompileplatforms3june/test:dependencyClasspath = Task..
+[info]   | |   | | +-crosscompileplatforms3june/test:dependencyClasspath::str..
+[info]   | |   | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Sco..
+[info]   | |   | | | 
+[info]   | |   | | +-crosscompileplatforms3june/test:externalDependencyClassp..
+[info]   | |   | | | +-crosscompileplatforms3june/test:externalDependencyClas..
+[info]   | |   | | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$S..
+[info]   | |   | | | | 
+[info]   | |   | | | +-crosscompileplatforms3june/test:managedClasspath = Tas..
+[info]   | |   | | | | +-crosscompileplatforms3june/test:classpathConfigurati..
+[info]   | |   | | | | | +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | | | | | +-*/*:internalConfigurationMap = <function1>
+[info]   | |   | | | | | +-crosscompileplatforms3june/*:update = Task[sbt.Upd..
+[info]   | |   | | | | | 
+[info]   | |   | | | | +-*/*:classpathTypes = Set(eclipse-plugin, bundle, sca..
+[info]   | |   | | | | +-crosscompileplatforms3june/test:managedClasspath::st..
+[info]   | |   | | | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init..
+[info]   | |   | | | | | 
+[info]   | |   | | | | +-crosscompileplatforms3june/*:update = Task[sbt.Updat..
+[info]   | |   | | | | 
+[info]   | |   | | | +-crosscompileplatforms3june/test:unmanagedClasspath = T..
+[info]   | |   | | |   +-*/*:buildDependencies = sbt.BuildDependencies@47b72d3b
+[info]   | |   | | |   +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | | |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   | |   | | |   +-crosscompileplatforms3june/*:thisProjectRef = Projec..
+[info]   | |   | | |   +-crosscompileplatforms3june/test:unmanagedClasspath::..
+[info]   | |   | | |     +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init..
+[info]   | |   | | |     
+[info]   | |   | | +-crosscompileplatforms3june/test:internalDependencyClassp..
+[info]   | |   | |   +-*/*:buildDependencies = sbt.BuildDependencies@47b72d3b
+[info]   | |   | |   +-crosscompileplatforms3june/test:classpathConfiguration..
+[info]   | |   | |   | +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | |   | +-*/*:internalConfigurationMap = <function1>
+[info]   | |   | |   | +-crosscompileplatforms3june/*:update = Task[sbt.Updat..
+[info]   | |   | |   | 
+[info]   | |   | |   +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | |   +-crosscompileplatforms3june/test:internalDependencyClas..
+[info]   | |   | |   | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$S..
+[info]   | |   | |   | 
+[info]   | |   | |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   | |   | |   +-crosscompileplatforms3june/*:thisProjectRef = ProjectR..
+[info]   | |   | |   +-*/*:trackInternalDependencies = TrackAlways
+[info]   | |   | |   
+[info]   | |   | +-crosscompileplatforms3june/test:exportedProducts = Task[sc..
+[info]   | |   | | +-*/*:apiUrl = None
+[info]   | |   | | +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | | +-*/*:exportJars = false
+[info]   | |   | | +-*/*:exportToInternal = TrackAlways
+[info]   | |   | | +-crosscompileplatforms3june/test:exportedProducts::stream..
+[info]   | |   | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Sco..
+[info]   | |   | | | 
+[info]   | |   | | +-crosscompileplatforms3june/test:packageBin::artifact = A..
+[info]   | |   | | | +-*/*:artifactClassifier = None
+[info]   | |   | | | +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | | | 
+[info]   | |   | | +-crosscompileplatforms3june/test:packageBin::artifactPath..
+[info]   | |   | | | +-*/*:scalaBinaryVersion = 2.10
+[info]   | |   | | | +-*/*:scalaVersion = 2.10.7
+[info]   | |   | | | +-crosscompileplatforms3june/test:packageBin::artifact =..
+[info]   | |   | | | | +-*/*:artifactClassifier = None
+[info]   | |   | | | | +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | | | | 
+[info]   | |   | | | +-*/*:artifactName = <function3>
+[info]   | |   | | | +-crosscompileplatforms3june/*:crossTarget = target/scal..
+[info]   | |   | | | +-crosscompileplatforms3june/*:projectId = crosscompilep..
+[info]   | |   | | | 
+[info]   | |   | | +-crosscompileplatforms3june/test:productDirectories = Tas..
+[info]   | |   | | | +-crosscompileplatforms3june/test:classDirectory = targe..
+[info]   | |   | | |   +-crosscompileplatforms3june/test:configuration = test
+[info]   | |   | | |   +-crosscompileplatforms3june/*:crossTarget = target/sc..
+[info]   | |   | | |   
+[info]   | |   | | +-crosscompileplatforms3june/*:projectId = crosscompilepla..
+[info]   | |   | | +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   | |   | | 
+[info]   | |   | +-crosscompileplatforms3june/test:fullClasspath::streams = T..
+[info]   | |   |   +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Scope..
+[info]   | |   |   
+[info]   | |   +-crosscompileplatforms3june/*:scalaInstance = Task[sbt.ScalaI..
+[info]   | |   +-*/*:taskTemporaryDirectory = /tmp/sbt_95e24f59
+[info]   | |   
+[info]   | +-crosscompileplatforms3june/test:fullClasspath = Task[scala.colle..
+[info]   | +-*/*:javaHome = None
+[info]   | +-*/*:javaOptions = Task[scala.collection.Seq[java.lang.String]]
+[info]   | +-crosscompileplatforms3june/test:test::streams = Task[sbt.std.Tas..
+[info]   | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedKey[_..
+[info]   | | 
+[info]   | +-crosscompileplatforms3june/test:test::testExecution = Task[sbt.T..
+[info]   | | +-crosscompileplatforms3june/*:parallelExecution = false
+[info]   | | +-*/*:test::tags = List((Tag(test),1))
+[info]   | | +-crosscompileplatforms3june/test:test::testOptions = Task[scala..
+[info]   | |   +-crosscompileplatforms3june/test:test::testListeners = Task[s..
+[info]   | |   | +-*/*:test::logBuffered = true
+[info]   | |   | +-crosscompileplatforms3june/test:test::streams = Task[sbt.s..
+[info]   | |   | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Scope..
+[info]   | |   | | 
+[info]   | |   | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedK..
+[info]   | |   | +-crosscompileplatforms3june/*:testListeners = Task[scala.co..
+[info]   | |   | 
+[info]   | |   +-*/*:testOptions = Task[scala.collection.Seq[sbt.TestOption]]
+[info]   | |   
+[info]   | +-crosscompileplatforms3june/test:testGrouping = Task[scala.collec..
+[info]   | +-*/*:testForkedParallel = false
+[info]   | +-crosscompileplatforms3june/test:testLoader = Task[java.lang.Clas..
+[info]   |   +-crosscompileplatforms3june/test:fullClasspath = Task[scala.col..
+[info]   |   | +-crosscompileplatforms3june/test:dependencyClasspath = Task[s..
+[info]   |   | | +-crosscompileplatforms3june/test:dependencyClasspath::strea..
+[info]   |   | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Scope..
+[info]   |   | | | 
+[info]   |   | | +-crosscompileplatforms3june/test:externalDependencyClasspat..
+[info]   |   | | | +-crosscompileplatforms3june/test:externalDependencyClassp..
+[info]   |   | | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Sco..
+[info]   |   | | | | 
+[info]   |   | | | +-crosscompileplatforms3june/test:managedClasspath = Task[..
+[info]   |   | | | | +-crosscompileplatforms3june/test:classpathConfiguration..
+[info]   |   | | | | | +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | | | | | +-*/*:internalConfigurationMap = <function1>
+[info]   |   | | | | | +-crosscompileplatforms3june/*:update = Task[sbt.Updat..
+[info]   |   | | | | | 
+[info]   |   | | | | +-*/*:classpathTypes = Set(eclipse-plugin, bundle, scala..
+[info]   |   | | | | +-crosscompileplatforms3june/test:managedClasspath::stre..
+[info]   |   | | | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$S..
+[info]   |   | | | | | 
+[info]   |   | | | | +-crosscompileplatforms3june/*:update = Task[sbt.UpdateR..
+[info]   |   | | | | 
+[info]   |   | | | +-crosscompileplatforms3june/test:unmanagedClasspath = Tas..
+[info]   |   | | |   +-*/*:buildDependencies = sbt.BuildDependencies@47b72d3b
+[info]   |   | | |   +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | | |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   |   | | |   +-crosscompileplatforms3june/*:thisProjectRef = ProjectR..
+[info]   |   | | |   +-crosscompileplatforms3june/test:unmanagedClasspath::st..
+[info]   |   | | |     +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$S..
+[info]   |   | | |     
+[info]   |   | | +-crosscompileplatforms3june/test:internalDependencyClasspat..
+[info]   |   | |   +-*/*:buildDependencies = sbt.BuildDependencies@47b72d3b
+[info]   |   | |   +-crosscompileplatforms3june/test:classpathConfiguration =..
+[info]   |   | |   | +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | |   | +-*/*:internalConfigurationMap = <function1>
+[info]   |   | |   | +-crosscompileplatforms3june/*:update = Task[sbt.UpdateR..
+[info]   |   | |   | 
+[info]   |   | |   +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | |   +-crosscompileplatforms3june/test:internalDependencyClassp..
+[info]   |   | |   | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Sco..
+[info]   |   | |   | 
+[info]   |   | |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   |   | |   +-crosscompileplatforms3june/*:thisProjectRef = ProjectRef..
+[info]   |   | |   +-*/*:trackInternalDependencies = TrackAlways
+[info]   |   | |   
+[info]   |   | +-crosscompileplatforms3june/test:exportedProducts = Task[scal..
+[info]   |   | | +-*/*:apiUrl = None
+[info]   |   | | +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | | +-*/*:exportJars = false
+[info]   |   | | +-*/*:exportToInternal = TrackAlways
+[info]   |   | | +-crosscompileplatforms3june/test:exportedProducts::streams ..
+[info]   |   | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Scope..
+[info]   |   | | | 
+[info]   |   | | +-crosscompileplatforms3june/test:packageBin::artifact = Art..
+[info]   |   | | | +-*/*:artifactClassifier = None
+[info]   |   | | | +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | | | 
+[info]   |   | | +-crosscompileplatforms3june/test:packageBin::artifactPath =..
+[info]   |   | | | +-*/*:scalaBinaryVersion = 2.10
+[info]   |   | | | +-*/*:scalaVersion = 2.10.7
+[info]   |   | | | +-crosscompileplatforms3june/test:packageBin::artifact = A..
+[info]   |   | | | | +-*/*:artifactClassifier = None
+[info]   |   | | | | +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | | | | 
+[info]   |   | | | +-*/*:artifactName = <function3>
+[info]   |   | | | +-crosscompileplatforms3june/*:crossTarget = target/scala-..
+[info]   |   | | | +-crosscompileplatforms3june/*:projectId = crosscompilepla..
+[info]   |   | | | 
+[info]   |   | | +-crosscompileplatforms3june/test:productDirectories = Task[..
+[info]   |   | | | +-crosscompileplatforms3june/test:classDirectory = target/..
+[info]   |   | | |   +-crosscompileplatforms3june/test:configuration = test
+[info]   |   | | |   +-crosscompileplatforms3june/*:crossTarget = target/scal..
+[info]   |   | | |   
+[info]   |   | | +-crosscompileplatforms3june/*:projectId = crosscompileplatf..
+[info]   |   | | +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   |   | | 
+[info]   |   | +-crosscompileplatforms3june/test:fullClasspath::streams = Tas..
+[info]   |   |   +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedK..
+[info]   |   |   
+[info]   |   +-crosscompileplatforms3june/*:scalaInstance = Task[sbt.ScalaIns..
+[info]   |   +-*/*:taskTemporaryDirectory = /tmp/sbt_95e24f59
+[info]   |   
+[info]   +-*/*:state = Task[sbt.State]
+[info]   +-crosscompileplatforms3june/test:test::streams = Task[sbt.std.TaskS..
+[info]   | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedKey[_ <..
+[info]   | 
+[info]   +-crosscompileplatforms3june/test:test::testResultLogger = Main(<fun..
+[info]   
+[IJ]> 

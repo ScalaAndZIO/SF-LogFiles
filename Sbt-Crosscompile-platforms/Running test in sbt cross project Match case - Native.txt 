@@ -1,0 +1,67 @@
+Repo: https://github.com/ScalaAndZIO/Sbt-Crosscompile-platforms.git
+Commit:1b5bcdb1e1ed944250767f4300c5e92eacc7ac5e
+
+[IJ]> test
+[info] Processing resources
+[info] QueuedCruncher is using /home/naseem/Android/Sdk/build-tools/27.0.3/aapt
+[info] Run completed in 207 milliseconds.
+[info] Total number of tests run: 0
+[info] Suites: completed 0, aborted 0
+[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0
+[info] No tests were executed.
+[info] Run completed in 117 milliseconds.
+[info] Total number of tests run: 0
+[info] Suites: completed 0, aborted 0
+[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0
+[info] No tests were executed.
+(node:16517) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+[info] Linking (21543 ms)
+[info] Discovered 2325 classes and 15319 methods
+[info] Optimizing (debug mode) (18361 ms)
+[info] Generating intermediate code (2862 ms)
+[info] Produced 67 files
+[info] Compiling to native code (5646 ms)
+[info] Linking native code (boehm gc) (1130 ms)
+[info] Starting process '/home/naseem/Documents/SFreely NEW/CrossCompilePlatforms3June/myProject/nativeUbuntu18/target/scala-2.11/myprojectnativeubuntu18-out' on port '22164'.
+[error] Uncaught exception when running tests: java.io.InvalidClassException: sbt.testing.TaskDef; local class incompatible: stream classdesc serialVersionUID = -7417691495999416204, local class serialVersionUID = 2663134200025980977
+[info] Run completed in 1 second, 930 milliseconds.
+[info] Total number of tests run: 0
+[info] Suites: completed 0, aborted 0
+[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0
+[info] No tests were executed.
+[error] Error during tests:
+[error] 	Forked test harness failed: java.net.SocketException: Connection reset
+[error] 	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+[error] 	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+[error] 	at java.net.SocketInputStream.read(SocketInputStream.java:224)
+[error] 	at java.io.ObjectInputStream$PeekInputStream.peek(ObjectInputStream.java:2631)
+[error] 	at java.io.ObjectInputStream$BlockDataInputStream.readBlockHeader(ObjectInputStream.java:2825)
+[error] 	at java.io.ObjectInputStream$BlockDataInputStream.refill(ObjectInputStream.java:2895)
+[error] 	at java.io.ObjectInputStream$BlockDataInputStream.skipBlockData(ObjectInputStream.java:2797)
+[error] 	at java.io.ObjectInputStream.skipCustomData(ObjectInputStream.java:2229)
+[error] 	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1871)
+[error] 	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1745)
+[error] 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2033)
+[error] 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567)
+[error] 	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2278)
+[error] 	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2202)
+[error] 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2060)
+[error] 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567)
+[error] 	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2278)
+[error] 	at java.io.ObjectInputStream.defaultReadObject(ObjectInputStream.java:557)
+[error] 	at java.lang.Throwable.readObject(Throwable.java:914)
+[error] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[error] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[error] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[error] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[error] 	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1158)
+[error] 	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2169)
+[error] 	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2060)
+[error] 	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1567)
+[error] 	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:427)
+[error] 	at sbt.React.react(ForkTests.scala:122)
+[error] 	at sbt.ForkTests$$anonfun$mainTestTask$1$Acceptor$2$.run(ForkTests.scala:76)
+[error] 	at java.lang.Thread.run(Thread.java:748)
+[error] (myProjectNativeUbuntu18/nativetest:test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 75 s, completed Jul 21, 2019 11:28:49 AM
+[IJ]> 

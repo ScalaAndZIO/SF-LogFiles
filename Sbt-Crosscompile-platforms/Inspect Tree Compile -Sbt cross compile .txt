@@ -1,0 +1,139 @@
+Repo: https://github.com/ScalaAndZIO/Sbt-Crosscompile-platforms.git
+Commit:1b5bcdb1e1ed944250767f4300c5e92eacc7ac5e
+
+[IJ]> inspect tree compile
+[info] crosscompileplatforms3june/compile:compile = Task[sbt.inc.Analysis]
+[info]   +-crosscompileplatforms3june/compile:incCompileSetup = Task[sbt.Comp..
+[info]   | +-*/*:skip = Task[Boolean]
+[info]   | +-crosscompileplatforms3june/compile:compileAnalysisFilename = Tas..
+[info]   | | +-*/*:crossPaths = true
+[info]   | | +-*/*:scalaBinaryVersion = 2.10
+[info]   | | 
+[info]   | +-*/*:compilerCache = Task[xsbti.compile.GlobalsCache]
+[info]   | +-*/*:definesClass = Task[scala.Function1[java.io.File, scala.Func..
+[info]   | +-crosscompileplatforms3june/compile:dependencyClasspath = Task[sc..
+[info]   | | +-crosscompileplatforms3june/compile:dependencyClasspath::stream..
+[info]   | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedKey..
+[info]   | | | 
+[info]   | | +-crosscompileplatforms3june/compile:externalDependencyClasspath..
+[info]   | | | +-crosscompileplatforms3june/compile:externalDependencyClasspa..
+[info]   | | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedK..
+[info]   | | | | 
+[info]   | | | +-crosscompileplatforms3june/compile:managedClasspath = Task[s..
+[info]   | | | | +-crosscompileplatforms3june/compile:classpathConfiguration ..
+[info]   | | | | | +-crosscompileplatforms3june/compile:configuration = compile
+[info]   | | | | | +-*/*:internalConfigurationMap = <function1>
+[info]   | | | | | +-crosscompileplatforms3june/*:update = Task[sbt.UpdateRep..
+[info]   | | | | | 
+[info]   | | | | +-*/*:classpathTypes = Set(eclipse-plugin, bundle, scala-jar..
+[info]   | | | | +-crosscompileplatforms3june/compile:managedClasspath::strea..
+[info]   | | | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Scope..
+[info]   | | | | | 
+[info]   | | | | +-crosscompileplatforms3june/*:update = Task[sbt.UpdateReport]
+[info]   | | | | 
+[info]   | | | +-crosscompileplatforms3june/compile:unmanagedClasspath = Task..
+[info]   | | |   +-*/*:buildDependencies = sbt.BuildDependencies@163b92db
+[info]   | | |   +-crosscompileplatforms3june/compile:configuration = compile
+[info]   | | |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   | | |   +-crosscompileplatforms3june/*:thisProjectRef = ProjectRef(f..
+[info]   | | |   +-crosscompileplatforms3june/compile:unmanagedClasspath::str..
+[info]   | | |     +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Scope..
+[info]   | | |     
+[info]   | | +-crosscompileplatforms3june/compile:internalDependencyClasspath..
+[info]   | |   +-*/*:buildDependencies = sbt.BuildDependencies@163b92db
+[info]   | |   +-crosscompileplatforms3june/compile:classpathConfiguration = ..
+[info]   | |   | +-crosscompileplatforms3june/compile:configuration = compile
+[info]   | |   | +-*/*:internalConfigurationMap = <function1>
+[info]   | |   | +-crosscompileplatforms3june/*:update = Task[sbt.UpdateReport]
+[info]   | |   | 
+[info]   | |   +-crosscompileplatforms3june/compile:configuration = compile
+[info]   | |   +-crosscompileplatforms3june/compile:internalDependencyClasspa..
+[info]   | |   | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedK..
+[info]   | |   | 
+[info]   | |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]   | |   +-crosscompileplatforms3june/*:thisProjectRef = ProjectRef(fil..
+[info]   | |   +-*/*:trackInternalDependencies = TrackAlways
+[info]   | |   
+[info]   | +-crosscompileplatforms3june/compile:incCompileSetup::streams = Ta..
+[info]   | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedKey[_..
+[info]   | | 
+[info]   | +-crosscompileplatforms3june/*:incOptions = Task[sbt.inc.IncOptions]
+[info]   | 
+[info]   +-crosscompileplatforms3june/compile:manipulateBytecode = Task[sbt.c..
+[info]     +-crosscompileplatforms3june/compile:compileIncremental = Task[sbt..
+[info]       +-crosscompileplatforms3june/compile:compile::compileInputs = Ta..
+[info]       | +-crosscompileplatforms3june/compile:classDirectory = target/s..
+[info]       | +-*/*:compileOrder = Mixed
+[info]       | +-crosscompileplatforms3june/*:compilers = Task[sbt.Compiler$C..
+[info]       | +-crosscompileplatforms3june/compile:dependencyClasspath = Tas..
+[info]       | +-crosscompileplatforms3june/compile:incCompileSetup = Task[sb..
+[info]       | +-*/*:javacOptions = Task[scala.collection.Seq[java.lang.Strin..
+[info]       | +-*/*:maxErrors = 100
+[info]       | +-crosscompileplatforms3june/compile:scalacOptions = Task[scal..
+[info]       | +-*/*:sourcePositionMappers = Task[scala.collection.Seq[scala...
+[info]       | +-crosscompileplatforms3june/compile:sources = Task[scala.coll..
+[info]       | +-crosscompileplatforms3june/compile:compile::streams = Task[s..
+[info]       |   +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedK..
+[info]       |   
+[info]       +-crosscompileplatforms3june/compile:compile::compilerReporter =..
+[info]       +-crosscompileplatforms3june/compile:compileIncremental::streams..
+[info]       | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$ScopedKey..
+[info]       | 
+[info]       +-crosscompileplatforms3june/compile:readAnalysis = Task[sbt.Com..
+[info]         +-crosscompileplatforms3june/compile:incCompileSetup = Task[sb..
+[info]           +-*/*:skip = Task[Boolean]
+[info]           +-crosscompileplatforms3june/compile:compileAnalysisFilename..
+[info]           | +-*/*:crossPaths = true
+[info]           | +-*/*:scalaBinaryVersion = 2.10
+[info]           | 
+[info]           +-*/*:compilerCache = Task[xsbti.compile.GlobalsCache]
+[info]           +-*/*:definesClass = Task[scala.Function1[java.io.File, scal..
+[info]           +-crosscompileplatforms3june/compile:dependencyClasspath = T..
+[info]           | +-crosscompileplatforms3june/compile:dependencyClasspath::..
+[info]           | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Sco..
+[info]           | | 
+[info]           | +-crosscompileplatforms3june/compile:externalDependencyCla..
+[info]           | | +-crosscompileplatforms3june/compile:externalDependencyC..
+[info]           | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$S..
+[info]           | | | 
+[info]           | | +-crosscompileplatforms3june/compile:managedClasspath = ..
+[info]           | | | +-crosscompileplatforms3june/compile:classpathConfigur..
+[info]           | | | | +-crosscompileplatforms3june/compile:configuration =..
+[info]           | | | | +-*/*:internalConfigurationMap = <function1>
+[info]           | | | | +-crosscompileplatforms3june/*:update = Task[sbt.Upd..
+[info]           | | | | 
+[info]           | | | +-*/*:classpathTypes = Set(eclipse-plugin, bundle, sca..
+[info]           | | | +-crosscompileplatforms3june/compile:managedClasspath:..
+[info]           | | | | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init..
+[info]           | | | | 
+[info]           | | | +-crosscompileplatforms3june/*:update = Task[sbt.Updat..
+[info]           | | | 
+[info]           | | +-crosscompileplatforms3june/compile:unmanagedClasspath ..
+[info]           | |   +-*/*:buildDependencies = sbt.BuildDependencies@163b92db
+[info]           | |   +-crosscompileplatforms3june/compile:configuration = c..
+[info]           | |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]           | |   +-crosscompileplatforms3june/*:thisProjectRef = Projec..
+[info]           | |   +-crosscompileplatforms3june/compile:unmanagedClasspat..
+[info]           | |     +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init..
+[info]           | |     
+[info]           | +-crosscompileplatforms3june/compile:internalDependencyCla..
+[info]           |   +-*/*:buildDependencies = sbt.BuildDependencies@163b92db
+[info]           |   +-crosscompileplatforms3june/compile:classpathConfigurat..
+[info]           |   | +-crosscompileplatforms3june/compile:configuration = c..
+[info]           |   | +-*/*:internalConfigurationMap = <function1>
+[info]           |   | +-crosscompileplatforms3june/*:update = Task[sbt.Updat..
+[info]           |   | 
+[info]           |   +-crosscompileplatforms3june/compile:configuration = com..
+[info]           |   +-crosscompileplatforms3june/compile:internalDependencyC..
+[info]           |   | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$S..
+[info]           |   | 
+[info]           |   +-*/*:settingsData = Task[sbt.Settings[sbt.Scope]]
+[info]           |   +-crosscompileplatforms3june/*:thisProjectRef = ProjectR..
+[info]           |   +-*/*:trackInternalDependencies = TrackAlways
+[info]           |   
+[info]           +-crosscompileplatforms3june/compile:incCompileSetup::stream..
+[info]           | +-*/*:streamsManager = Task[sbt.std.Streams[sbt.Init$Scope..
+[info]           | 
+[info]           +-crosscompileplatforms3june/*:incOptions = Task[sbt.inc.Inc..
+[info]           
+[IJ]> 
